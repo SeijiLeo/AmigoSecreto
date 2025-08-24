@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Amigo Secreto</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>SORTEADOR DE NOMES</h1>
+
+  <div class="estrutura-wrapper">
+    <div class="estrutura">
+
+      <!-- Adicionar uma linha de texto para indicar a lista de participantes do lado esquerdo -->
+      <div class="BlocoLista">
+      <p class="ListaParticipantes"> Lista dos participantes </p>
+      <ul id="listaNomes"></ul>
+      </div>
+      <!-- Imagem centralizada -->
+      <div class="imagem-central">
+      <img src="assets/fundonovo.jpg" alt="Imagem do Amigo Secreto" />
+      </div>
+      <!-- Resultado ao lado direito da imagem-->
+      <div class="BlocoResultado">
+      <p class="ListaResultado"> Resultado do sorteio </p>
+      <div class="resultado" id="resultadoSorteio"></div>
+      </div>
+    </div>
+  </div>
+
+    <div class="controle-wrapper">
+    <div class="input-group">
+      <input type="text" id="nomeInput" placeholder="Digite o nome do amigo" />
+      <button onclick="limparInput()" class="clear-input">X</button>
+      <button onclick="adicionarNome()">Adicionar</button>
+    </div>
+
+    <div class="sorteio">
+      <button onclick="sortearAmigo()">Sortear Amigo</button>
+      <button onclick="limparLista()">Limpar Lista</button>
+      <button onclick="copiarResultado()" id="copiarResultadoBtn" style="display: none;">Copiar Resultado</button>
+    </div>
+  </div>
+  
+  <script src="app.js" defer></script>
+</body>
+</html>

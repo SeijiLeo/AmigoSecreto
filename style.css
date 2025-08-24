@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(37deg, #000000 0%, #090979 63%, #00d4ff 100%);
+  color: #fff;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+h1 {
+  font-size: 2em;
+  background: rgba(0, 123, 255, 0.8);
+  padding: 12px 24px;
+  border-radius: 8px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+/* Estrutura de lista - imagem - resultado */
+.estrutura {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.estrutura-wrapper {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 1100px;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.controle-wrapper {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 1100px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0, 0, 0, 0.4;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+
+/* Lista de nomes à esquerda */
+#listaNomes {
+  background: rgba(0, 123, 255, 0.8);
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  list-style: none;
+  overflow-y: auto;
+  min-width: 200px;
+  max-width: 300px;
+  margin-bottom: 3px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.BlocoLista{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ListaParticipantes{
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.BlocoResultado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ListaResultado {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+#listaNomes li {
+  margin-bottom: 2px;
+  line-height: 1.5;
+  font-size: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remover-nome {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Imagem principal */
+.imagem-central img {
+  width: 450px;
+  margin-top: 10px;
+  max-width: 90vw;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Resultado à direita */
+.resultado {
+  background: rgba(0, 123, 255, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 200px;
+  max-width: 300px;
+  font-weight: bold;
+  word-wrap: break-word;
+}
+
+/* Input e botões */
+.input-group {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+#nomeInput {
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  color: white;
+}
+
+#nomeInput::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  opacity: 1;
+}
+
+button {
+  padding: 10px 16px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.clear-input {
+  background: #dc3545;
+}
+
+.clear-input:hover {
+  background: #a71d2a;
+}
+
+/* Botões principais */
+.sorteio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .estrutura {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #listaNomes,
+  .resultado {
+    width: 90%;
+    max-width: 90%;
+  }
+
+  .imagem-central img {
+    width: 80vw;
+  }
+}
