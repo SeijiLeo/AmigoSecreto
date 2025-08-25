@@ -6,6 +6,8 @@ Este é um aplicativo simples e interativo para realizar sorteios de **amigo sec
 
 Este projeto foi realizado para o challenge da Alura G9-One 2025 
 
+Link do vercel : https://sorteador-de-nomes-ashy.vercel.app/
+
 
 ## 🚀 Funcionalidades
 
