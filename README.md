@@ -4,7 +4,8 @@
 
 Este é um aplicativo simples e interativo para realizar sorteios de **amigo secreto**. A ideia é permitir que os usuários adicionem nomes de amigos a uma lista e, com um clique, sorteiem aleatoriamente um dos nomes.
 
-<link rel="preconnect" href="https://sorteador-de-nomes-ashy.vercel.app/"> 
+Este projeto foi realizado para o challenge da Alura G9-One 2025 
+
 
 ## 🚀 Funcionalidades
 
